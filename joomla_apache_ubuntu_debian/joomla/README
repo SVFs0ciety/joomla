@@ -1,0 +1,3 @@
+The files directory contains the Apache Virtual Host configuration files where you need to specify your data.
+
+In playbook mysql.yml you should specify user name, database, database user password.

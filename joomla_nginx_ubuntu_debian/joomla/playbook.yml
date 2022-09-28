@@ -1,0 +1,14 @@
+- hosts: client
+  become: yes
+  tasks:
+    - name: Install Nginx
+      include_tasks: nginx.yml
+
+    - name: Install PHP & PHP-FPM
+      include_tasks: php-nginx.yml
+
+    - name: Install Mysql
+      include_tasks: mysql.yml
+
+    - name: Install Joomla
+      include_tasks: download_joomla_and_extracting.yml      

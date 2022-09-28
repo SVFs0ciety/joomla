@@ -1,0 +1,8 @@
+    - name: Install Mariadb
+      apt:
+        pkg:
+          - mariadb-server
+          - mariadb-client
+
+    - name: Create User && Password
+      shell: mysql -u root -pmEsh0chek -e "CREATE DATABASE joomla; CREATE USER 'joomla'@localhost IDENTIFIED BY 'mEsh0chek'; GRANT ALL PRIVILEGES ON joomla.* TO joomla@localhost IDENTIFIED BY 'mEsh0chek'; FLUSH PRIVILEGES;"

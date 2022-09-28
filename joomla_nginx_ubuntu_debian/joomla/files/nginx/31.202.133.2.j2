@@ -1,14 +1,14 @@
 server {
     listen 80;
-    server_name 31.202.133.2;
+    server_name your domain or ip address;
     root /var/www/joomla;
 
     index index.html index.htm index.php;
 
     charset utf-8;
 
-    access_log /var/log/nginx/31.202.133.2.access.log;
-    error_log /var/log/nginx/31.202.133.2.error.log info;
+    access_log /var/log/nginx/domain.access.log;
+    error_log /var/log/nginx/domain.error.log info;
 
     location / {
         try_files $uri $uri/ /index.php?$args;

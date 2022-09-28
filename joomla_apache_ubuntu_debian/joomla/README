@@ -1,5 +1,5 @@
-<strong>The files directory contains the Apache Virtual Host configuration files where you need to specify your data.
+The files directory contains the Apache Virtual Host configuration files where you need to specify your data.
 
-In playbook mysql.yml you should specify user name, database, database user password.</strong>
+In playbook mysql.yml you should specify user name, database, database user password.
 
-<h1>If at the end of the installation Joomla shows an error 500, you need to restart the service Apache.</h1>
+If at the end of the installation Joomla shows an error 500, you need to restart the service Apache.

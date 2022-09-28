@@ -1,5 +1,5 @@
 # joomla
-Install Joomla for Debian and Ubuntu (Apache,Nginx)
+<strong>Install Joomla for Debian and Ubuntu (Apache,Nginx)</strong>
 
 <h1>Each directory has a Readme with installation instructions.</h1>
 

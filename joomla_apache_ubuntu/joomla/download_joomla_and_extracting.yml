@@ -1,6 +1,6 @@
     - name: Create Folder Joomla
       file: 
-        path: /var/www/html/joomla
+        path: /var/www/html/PATH_TO_FOLDER
         state: directory
 
     - name: Joomla Download Package
@@ -13,12 +13,12 @@
       when: output.changed == true
       unarchive:
         src: /usr/src/Joomla_4.2.3-Stable-Full_Package.tar.gz
-        dest: /var/www/html/joomla/
+        dest: /var/www/html/PATH_TO_FOLDER
         remote_src: yes
 
     - name: Change the ownership of joomla directory to the www-data user
       file:
-        path: /var/www/html/joomla
+        path: /var/www/html/PATH_TO_FOLDER
         state: directory
         recurse: yes
         owner: www-data

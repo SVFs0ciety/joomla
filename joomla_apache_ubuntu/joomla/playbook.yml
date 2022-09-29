@@ -1,0 +1,14 @@
+- hosts: client
+  become: yes
+  tasks:
+    - name: Apache Install
+      include_tasks: apache.yml
+
+    - name: PHP Install
+      include_tasks: php-apache.yml
+
+    - name: Mysql Install
+      include_tasks: mysql.yml
+
+    - name: Download and Install Magento
+      include_tasks: download_joomla_and_extracting.yml
